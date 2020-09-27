@@ -13,6 +13,10 @@ const members = [
   { id: 3, name: "Max", residence: "Rotterdam" }
 ];
 
+app.get("/", (req, res) => {
+  res.send("Welcome to my Express Server");
+});
+
 //Get all users
 app.get("/api/members", (req, res) => {
   res.json(members);
