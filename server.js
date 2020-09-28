@@ -17,6 +17,7 @@ mongoose.connect(
 
 //Middleware
 app.use(cors());
+
 //Import routes
 const userRoutes = require("./routes/users");
 
